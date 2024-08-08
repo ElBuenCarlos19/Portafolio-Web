@@ -93,7 +93,7 @@ export default function Home() {
               <Image src="/lenguajes/Javascript.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
-              <Image src="/lenguajes/Mariadb.png" alt="" width={120} height={150} />
+              <Image src="/lenguajes/MariaDB.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
               <Image src="/lenguajes/MongoDB.png" alt="" width={120} height={150} />
