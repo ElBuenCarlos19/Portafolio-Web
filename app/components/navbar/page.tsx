@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="flex justify-center vidrioeffect">
       <div className="Nombre justify-start">
-        <Image src="/logo.png" alt="Logo" width={100} height={100} />
+        <Image src="/Logo.png" alt="Logo" width={100} height={100}/>
       </div>
       <div className="flex w-full justify-center ">
         <ul className="flex items-center justify-center h-full gap-5">

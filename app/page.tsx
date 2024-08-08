@@ -117,7 +117,7 @@ export default function Home() {
               <Image src="/lenguajes/Typescript.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
-              <Image src="/lenguajes/Workbench.png" alt="" width={120} height={150} />
+              <Image src="/lenguajes/WorkBench.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
               <Image src="/lenguajes/Bootstrap.png" alt="" width={120} height={150} />
@@ -160,10 +160,10 @@ export default function Home() {
           
         </div>
         <div className="grid grid-cols-2 items-center justify-items-center" style={{ padding: "20px 150px" }}>
-          <Project nombreProject="Pagina Web Informativa" description="Pagina informativa de un gestor de muestras de proyectos de la universidad" icono1="html5" icono2="bootstrap" icono3="" color="#0e0d32" image="/projects/project1.png"></Project>
-          <Project nombreProject="Login Con Api" description="Conexion entre un frontend, una api y una base de datos basica." icono1="nextjs" icono2="nestjs" icono3="mysql" color="#18311C" image="/projects/project2.png"></Project>
+          <Project nombreProject="Pagina Web Informativa" description="Pagina informativa de un gestor de muestras de proyectos de la universidad" icono1="html5" icono2="bootstrap" icono3="" color="#0e0d32" image="/projects/Project1.png"></Project>
+          <Project nombreProject="Login Con Api" description="Conexion entre un frontend, una api y una base de datos basica." icono1="nextjs" icono2="nestjs" icono3="mysql" color="#18311C" image="/projects/Project2.png"></Project>
           <Project nombreProject="Proyecto de prueba" description="No tengo muchos mas XD osea si tengo pero esos dos son los unicos decentes" icono1="ionic" icono2="java" icono3="" color="#149d8e" image="/projects/favicon.webp"></Project>
-          <Project nombreProject="Ojala con colapse el grid" description="Look what you made me do" icono1="html5" icono2="react" icono3="" color="#755cde" image="/projects/project4.png"></Project>
+          <Project nombreProject="Ojala con colapse el grid" description="Look what you made me do" icono1="html5" icono2="react" icono3="" color="#755cde" image="/projects/Project4.png"></Project>
         </div>
       </section>
 
@@ -181,10 +181,10 @@ export default function Home() {
             </div>
           </div>
           <div className="RedesSociales grid grid-cols-4 ">
-            <button><Image src={"/redes/instagram.png"} alt="instagram" width={50} height={50} /></button>
-            <button><Image src={"/redes/github.png"} alt="twitter" width={50} height={50} /></button>
+            <button><Image src={"/redes/Instagram.png"} alt="instagram" width={50} height={50} /></button>
+            <button><Image src={"/redes/Github.png"} alt="twitter" width={50} height={50} /></button>
             <button><Image src={"/redes/linkedin.png"} alt="linkedin" width={50} height={50} /></button>
-            <button><Image src={"/redes/messenger.png"} alt="messenger" width={50} height={50} /></button>
+            <button><Image src={"/redes/Messenger.png"} alt="messenger" width={50} height={50} /></button>
           </div>
         </div> 
         <div className="justify-items-center col-span-2">
