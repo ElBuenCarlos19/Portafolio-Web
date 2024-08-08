@@ -7,13 +7,11 @@ import Cubo from "./components/cubo/page";
 import Project from "./components/project/page";
 import Input from "./components/input/page";
 import { josefin_sans, fira_sans_condensed } from "../_scripts/fonts"; 
-import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col bg`}>
-
+    <main>
 
       <header className="header">
 

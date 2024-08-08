@@ -1,53 +1,50 @@
 import "./styles.css";
 
-interface props {
+interface Props {
     left: number;
     top: number;
     rotateY: number;
     rotateX: number;
     rotateZ: number;
-    tamaño: number;
+    tamano: number;
 }
 
-function Cubo(props: props) {
+const Cubo: React.FC<Props> = ({ left, top, rotateY, rotateX, rotateZ, tamano }) => {
     return (
-        <div className="container" style={{ left: `${props.left}%`, top: `${props.top}%` }}>
-            <div className="cubo" style={{ transform: `rotateY(${props.rotateY}deg) rotateX(${props.rotateX}deg) rotateZ(${props.rotateZ}deg)` }}>
-            <div className="cara caraArriba" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateY(-${props.tamaño/2}px) rotateX(90deg)`
+        <div className="container" style={{ left: `${left}%`, top: `${top}%` }}>
+            <div className="cubo" style={{ transform: `rotateY(${rotateY}deg) rotateX(${rotateX}deg) rotateZ(${rotateZ}deg)` }}>
+                <div className="cara caraArriba" style={{
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateY(-${tamano / 2}px) rotateX(90deg)`
                 }}></div>
                 <div className="cara caraIzquierda" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateX(-${props.tamaño/2}px) rotateY(90deg)`
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateX(-${tamano / 2}px) rotateY(90deg)`
                 }}></div>
                 <div className="cara caraDerecha" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateX(${props.tamaño/2}px) rotateY(90deg)`
-
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateX(${tamano / 2}px) rotateY(90deg)`
                 }}></div>
                 <div className="cara caraFondo" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateZ(-${props.tamaño/2}px)`
-
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateZ(-${tamano / 2}px)`
                 }}></div>
                 <div className="cara caraFrente" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateZ(${props.tamaño/2}px)`
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateZ(${tamano / 2}px)`
                 }}></div>
                 <div className="cara caraAbajo" style={{
-                    height: `${props.tamaño}px`,
-                    width: `${props.tamaño}px`,
-                    transform: `translateY(${props.tamaño/2}px) rotateX(90deg)`
+                    height: `${tamano}px`,
+                    width: `${tamano}px`,
+                    transform: `translateY(${tamano / 2}px) rotateX(90deg)`
                 }}></div>
             </div>
         </div>
-
     );
 }
 
