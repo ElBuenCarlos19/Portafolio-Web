@@ -41,7 +41,7 @@
 
   & span {
     width: max-content;
-    background-color: transparent;
+    background-color: #2f2d33;
     margin-left: 1rem;
     color: var(--placeholder);
     transition: transform 0.5s;

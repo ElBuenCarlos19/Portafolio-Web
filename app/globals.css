@@ -60,7 +60,7 @@ body {
 .Titulo{
   font-size: 120px;
   font-weight: bold;
-  
+  color: white;
 }
 
 .Subtitulo{
@@ -110,7 +110,6 @@ body {
 }
 
 .TextoDescripcion{
-
   height: 1100px;
 }
 
@@ -122,6 +121,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .svg1{
@@ -139,6 +139,7 @@ body {
   font-size: 60px;
   text-align: center;
   padding: 30px 0px;
+  color: white;
 }
 
 

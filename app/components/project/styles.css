@@ -29,6 +29,7 @@
 
 .textosProject{
     transition: all 0.3s ease-in-out;
+    color: white;
 }
 .containerproject:hover .ContainerImage {
     transform: scale(1.5) translateX(-29%);

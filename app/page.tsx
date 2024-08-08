@@ -156,7 +156,7 @@ export default function Home() {
 
       <section style={{ marginBottom: "100px" }}>
         <div className="text-center">
-          <h2 className={`Titulo ${josefin_sans.className}`}>Projects</h2>
+          <h2 className={`Expertise ${josefin_sans.className}`}>Projects</h2>
           
         </div>
         <div className="grid grid-cols-2 items-center justify-items-center" style={{ padding: "20px 150px" }}>
@@ -172,7 +172,7 @@ export default function Home() {
           <div className="grid row-span-3 grid-cols-2 justify-items-center">
             <Image src="/profile.jpeg" alt="" width={130} height={100} />
             <div style={{ marginLeft: "-0px" }}>
-              <h3>
+              <h3 className="text-white">
                 Carlos Peralta <br />
                 19 years old <br />
                 Computer Engineer <br />
@@ -195,7 +195,7 @@ export default function Home() {
             <Input text="Name" wit={100} ></Input>
             <Input text="Message" wit={206} ></Input>
             </div>
-            <button type="submit" className="button-general" style={{marginTop: "15px", height: "50px"}}>Shoot Message</button>
+            <button type="submit" className="button-general text-white" style={{marginTop: "15px", height: "50px"}}>Shoot Message</button>
           </form>
           </div>
           
