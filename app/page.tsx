@@ -141,12 +141,11 @@ export default function Home() {
               <Image src="/lenguajes/Javascript.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
-              <Image src="/lenguajes/Mariadb.png" alt="" width={120} height={150} />
+              <Image src="/lenguajes/MariaDB.png" alt="" width={120} height={150} />
             </div>
             <div className="slide">
               <Image src="/lenguajes/MongoDB.png" alt="" width={120} height={150} />
             </div>
-
             <div className="slide">
               <Image src="/lenguajes/Next.png" alt="" width={120} height={150} />
             </div>
@@ -170,7 +169,7 @@ export default function Home() {
       <footer className="grid grid-cols-4 justify-items-center align-items-center" style={{ backgroundColor: "#2f2d33", height: "300px" }}>
         <div className="grid grid-rows-4 p-4">
           <div className="grid row-span-3 grid-cols-2 justify-items-center">
-            <Image src="/profile.jpeg" alt="" width={130} height={100} />
+            <Image src="/Profile.jpeg" alt="" width={130} height={100} />
             <div style={{ marginLeft: "-0px" }}>
               <h3 className="text-white">
                 Carlos Peralta <br />
