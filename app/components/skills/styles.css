@@ -1,0 +1,23 @@
+.square {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    color: white;
+    text-align: center;
+}
+
+.lineaDecorativa::after {
+    content: "</div>";
+    position: relative;
+    top: 73px;
+    left: -10px;
+    opacity: 0.5;
+}
+
+.lineaDecorativa::before {
+    content: "<div>";
+    position: relative;
+    top:-25px;
+    left: -10px;
+    opacity: 0.5;
+}

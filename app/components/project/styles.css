@@ -1,0 +1,93 @@
+.CajaSuperior {
+    height: 110%;
+}
+
+
+.Textotituloproject{
+    font-size: 1.4rem;
+    text-rendering: geometricPrecision;
+    color: #ffffff;
+    width: 130%;
+}
+
+.distancia{
+    margin-left: 10%;
+}
+
+.paddinginterno > *{
+    margin: 0px 5px;
+}
+
+.containerproject{
+    border-radius: 5%;
+    width: 480px;
+    height: 320px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+.textosProject{
+    transition: all 0.3s ease-in-out;
+}
+.containerproject:hover .ContainerImage {
+    transform: scale(1.5) translateX(-29%);
+}
+
+.containerproject:hover .opacidadBlock {
+    transform: translateX(-100%);
+    width: 0%;
+}
+
+.containerproject:hover .textosProject {
+    transform: scale(0) translateX(-100%);
+}
+
+.containerproject:hover .IconoHovContainer > button > * {
+    width: 100%;
+}
+
+.description{
+    font-size: 0.9rem;
+    width: 120%;
+}
+
+.iconoReact {
+    position: relative;
+    font-size: 1.2 rem;     
+  }
+
+.radioEnvolve {
+    background-color: #0f0d24;
+    position: inline-block;
+    padding: 5px;
+    border-radius: 100%;   
+}
+
+.ContainerImage {
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+.opacidadBlock {
+    position: absolute;
+    width: 110%;
+    height: 115%;
+    z-index: 1;
+    background: linear-gradient(to right, rgb(15, 13, 50), transparent); 
+    transition: all 0.4s ease-in-out;
+}
+
+.IconoHovContainer {
+    position: absolute;
+}
+
+.IconoHovContainer > button > * {
+    font-size: 35px;
+    transition: all .1s ease;
+    width: 0%;
+}
+
+.IconoHovContainer > button > *:hover {
+    opacity: .5;
+}
