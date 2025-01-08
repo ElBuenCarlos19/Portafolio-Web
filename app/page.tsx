@@ -6,6 +6,7 @@ import Skills from "./components/skills/page";
 import Cubo from "./components/cubo/page";
 import Project from "./components/project/page";
 import Input from "./components/input/page";
+import MoveCube from "./components/cubo/movecube/page";
 import { josefin_sans, fira_sans_condensed } from "../_scripts/fonts"; 
 import Image from "next/image";
 
@@ -45,19 +46,7 @@ export default function Home() {
 
       </header>
       <section className="TextoDescripcion">
-        {/* <svg width="1200" height="1200" className="svgclase absolute">
-          <circle cx="40" cy="840" r="90" fill="none" stroke="white" strokeWidth="1" />
-          <line x1="220" y1="950" x2="25" y2="650" stroke="white" stroke-width="1" />
-          <rect opacity="1" x="10.4252" y="-506.8326" width="7.50168" height="7.50168" transform="rotate(110.283 10.4252 75.8326)" fill="none" stroke="white" stroke-width="1.22683" />
-          <rect opacity="1" x="-170.4252" y="-506.8326" width="7.50168" height="7.50168" transform="rotate(110.283 10.4252 75.8326)" fill="none" stroke="white" stroke-width="1.22683" />
-          <rect opacity="1" x="180.869" y="-443.825" width="7.50168" height="7.50168" transform="rotate(110.283 180.869 138.825)" fill="none" stroke="white" stroke-width="1.22683" />
-          <rect opacity="1" x="0.069" y="-443.825" width="7.50168" height="7.50168" transform="rotate(110.283 180.869 138.825)" fill="none" stroke="white" stroke-width="1.22683" />
-          <rect x="650.4713" y="-91.84" width="180.485" height="180.485" transform="rotate(20.2832 69.4713 -91.84)" stroke="white" stroke-opacity="1" stroke-width="1.22683" />
-
-
-        </svg> */}
-        <div className="planet">
-        </div>
+        <MoveCube></MoveCube>
         <h3 className={`descripcion ${josefin_sans.className} z-10`}>As a computer engineer, my passion is to design and develop robust, scalable products that not only meet user technical requirements, but will also deliver exceptional experiences.</h3>
       </section>
 
@@ -200,7 +189,7 @@ export default function Home() {
           
         </div>
         <div className={`${josefin_sans.className} text-left text-3xl text-gray-400`} style={{marginTop: "30px"}}>
-            "No tengo nada que decir, <br />espero algun dia <br />pueda decir algo <br /> <strong>importante</strong>"
+            No tengo nada que decir, <br />espero algun dia <br />pueda decir algo <br /> <strong>importante</strong>
           </div>
       </footer>
     </main>

@@ -1,0 +1,91 @@
+@property --hue {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  div {
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+  }
+  
+  .cont {
+    --clr: hsl(var(--hue) 40% 30%);
+    --hue2: calc(var(--hue) + 90deg);
+    --clr2: hsl(var(--hue2) 60% 30%);
+    color: var(--clr);
+    filter: drop-shadow(0 0 1.5vmin currentcolor);
+    animation: clr-chg infinite 10s linear;
+    display: visible;
+  }
+  
+  .cube {
+    width: 40vmin;
+    aspect-ratio: 1;
+    position: absolute;
+    rotate: 1 1 1 45deg;
+    animation: rot infinite 20s linear;
+    top: 420px;
+    right: 150px;
+  }
+  .cube:hover {
+    animation-play-state: paused;
+  }
+  .cube:hover .side {
+    --clr2: color-mix(in lab, var(--clr), #fff);
+    box-shadow: 0 0 2vmin currentcolor;
+  }
+  
+  .side {
+    --ang: 45deg;
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    background-image: repeating-linear-gradient(var(--ang), #0000 0 9%, var(--clr) 0 14%, #0000 0 23%, var(--clr2) 0 27%, #0000 0);
+  }
+  
+  .side:nth-of-type(1) {
+    translate: 0 0 20vmin;
+  }
+  
+  .side:nth-of-type(2) {
+    rotate: y 90deg;
+    translate: 20vmin;
+    transform: rotatez(270deg);
+  }
+  
+  .side:nth-of-type(3) {
+    rotate: y 90deg;
+    translate: -20vmin;
+    transform: rotatez(90deg);
+  }
+  
+  .side:nth-of-type(4) {
+    rotate: x 90deg;
+    translate: 0 20vmin;
+    transform: rotatez(270deg);
+  }
+  
+  .side:nth-of-type(5) {
+    rotate: x 90deg;
+    translate: 0 -20vmin;
+    --ang: 135deg;
+  }
+  
+  .side:nth-of-type(6) {
+    translate: 0 0 -20vmin;
+    transform: rotatez(180deg);
+  }
+  
+  @keyframes rot {
+    to {
+      transform: rotatex(1080deg) rotatey(360deg) rotatez(720deg);
+    }
+  }
+  @keyframes clr-chg {
+    from {
+      --hue: 0deg;
+    }
+    to {
+      --hue: 360deg;
+    }
+  }
