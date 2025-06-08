@@ -6,7 +6,6 @@ import Skills from "./components/skills/page";
 import Cubo from "./components/cubo/page";
 import Project from "./components/project/page";
 import Input from "./components/input/page";
-import MoveCube from "./components/cubo/movecube/page";
 import { josefin_sans, fira_sans_condensed } from "../_scripts/fonts"; 
 import Image from "next/image";
 
@@ -46,7 +45,6 @@ export default function Home() {
 
       </header>
       <section className="TextoDescripcion">
-        <MoveCube></MoveCube>
         <h3 className={`descripcion ${josefin_sans.className} z-10`}>As a computer engineer, my passion is to design and develop robust, scalable products that not only meet user technical requirements, but will also deliver exceptional experiences.</h3>
       </section>
 
